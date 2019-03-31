@@ -22,6 +22,7 @@ namespace src.Factory
         /* Use the Dependency Inversion Principle
            Dependency - dependents (Create responsibility) are externalized to derived class.
            Inversion - normally OOD derived class use the bass class implementations but the inversion is just opposite, the base class use the derived class implementations.
+           Decouple the handler class from concreate products. All concreate products are created in the handler sub class
          */
         protected abstract IPizza CreatePizza(string type);
     }
